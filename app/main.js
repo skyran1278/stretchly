@@ -329,6 +329,8 @@ function startMicrobreak () {
 
   for (let displayIdx = 0; displayIdx < numberOfDisplays(); displayIdx++) {
     const windowOptions = {
+      width: 200,
+      height: 50,
       autoHideMenuBar: true,
       icon: `${__dirname}/images/windowIcon.png`,
       resizable: false,
@@ -347,6 +349,8 @@ function startMicrobreak () {
     if (!(settings.get('fullscreen') && process.platform === 'win32')) {
       windowOptions.x = displaysX(displayIdx)
       windowOptions.y = displaysY(displayIdx)
+      windowOptions.x = 1700
+      windowOptions.y = 960
     }
 
     const microbreakWinLocal = new BrowserWindow(windowOptions)
@@ -418,6 +422,8 @@ function startBreak () {
 
   for (let displayIdx = 0; displayIdx < numberOfDisplays(); displayIdx++) {
     const windowOptions = {
+      width: 200,
+      height: 50,
       autoHideMenuBar: true,
       icon: `${__dirname}/images/windowIcon.png`,
       resizable: false,
@@ -436,6 +442,8 @@ function startBreak () {
     if (!(settings.get('fullscreen') && process.platform === 'win32')) {
       windowOptions.x = displaysX(displayIdx)
       windowOptions.y = displaysY(displayIdx)
+      windowOptions.x = 1700
+      windowOptions.y = 960
     }
 
     const breakWinLocal = new BrowserWindow(windowOptions)

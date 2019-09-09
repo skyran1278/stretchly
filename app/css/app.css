@@ -132,7 +132,7 @@ a {
 #about-footer,
 #defaults,
 #skip {
-  bottom: 20px;
+  bottom: 0px;
   color: #fff;
   font-size: 18px;
   left: 50%;
@@ -148,12 +148,13 @@ a {
 
 progress {
   height: 5px;
-  margin-top: 40px;
+  margin: 0px;
+  /* margin-top: 40px; */
 }
 
 #progress-time {
   font-size: 15px;
-  margin: 7px 0 0;
+  /* margin: 7px 0 0; */
 }
 
 .strict {
@@ -195,4 +196,8 @@ select  {
 
 .contributor-settings .heading {
   font-size: 28px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

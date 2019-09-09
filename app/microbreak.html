@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title data-i18next="microbreak.title"></title>
-    <link rel="stylesheet" type="text/css" href="css/app.css">
-  </head>
-  <body>
-    <div class="microbreak">
-      <div class="microbreak-idea"></div>
-      <progress id='progress' max="10000" ></progress><br/>
-      <p id='progress-time'></p>
-      <a id="postpone" title="Ctrl/Cmd + x" data-i18next="microbreak.postpone"></a>
-      <a id="close" title="Ctrl/Cmd + x" data-i18next="microbreak.keepGoing"></a>
-    </div>
-    <script>
-      require('./platform.js')
-      require('./microbreak.js')
-    </script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title data-i18next="microbreak.title"></title>
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+
+<body>
+  <div class="microbreak" style="padding:0px;margin:0px;font-size:2px">
+    <!-- <div class="microbreak-idea"></div> -->
+    <progress id='progress' max="10000"></progress>
+    <p id='progress-time'></p>
+    <a id="postpone" title="Ctrl/Cmd + x" data-i18next="microbreak.postpone"></a>
+    <a id="close" title="Ctrl/Cmd + x" data-i18next="microbreak.keepGoing"></a>
+  </div>
+  <script>
+    require('./platform.js')
+    require('./microbreak.js')
+  </script>
+</body>
+
 </html>
